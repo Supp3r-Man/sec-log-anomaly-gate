@@ -15,7 +15,7 @@
 7. **Wrote the CLI and config validation**, then ran the whole thing and shipped `default_config.json` from the dev-only tuning output.
 8. **Wrote 75 tests** in five files: windows (10), rules (19), loader/generator (12), eval/config (20, 11 of them parametrized config cases), CLI through a real subprocess (14). Property tests compare the window code, the hour z-score, and the EWMA against naive references on seeded random inputs.
 9. **Mutation-checked** 10 behaviours on a fresh copy each time (script in my scratchpad, prints PATTERN MISSED if the text is absent). All 10 were killed on the first run.
-10. **Wrote the README from the real `demo` output**, then committed locally. Nothing is pushed and CI has not run.
+10. **Wrote the README from the real `demo` output**, then committed locally. Pushed to both accounts; CI passed on Python 3.11 and 3.13.
 
 Problems and choices along the way:
 - First run was too easy: about 95/96 recall on dev. My slow attacks were not slow enough. I slowed them (stuffing 2-5 minutes per try, spraying 10-20 minutes, privilege gap up to 30 hours, off-hours hiding inside business hours, brute force at up to 1 per 2 hours) and re-tuned. The numbers in the README are from after that change; I had not seen test-split results when choosing the new speeds beyond the first demo run, which printed both splits, so treat the test split as lightly exposed.
