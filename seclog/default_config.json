@@ -1,0 +1,40 @@
+{
+ "brute_fast": {
+  "n": 8,
+  "w": 600
+ },
+ "brute_slow": {
+  "n": 8,
+  "w": 86400
+ },
+ "impossible_travel": {
+  "min_km": 300,
+  "seen_ok": 1,
+  "v": 600
+ },
+ "offhours_rule": {
+  "end": 17,
+  "start": 7
+ },
+ "offhours_z": {
+  "min_hist": 3,
+  "z": 2
+ },
+ "privesc_seq": {
+  "w": 86400
+ },
+ "spray_slow": {
+  "k": 10,
+  "ratio": 0.5,
+  "w": 43200
+ },
+ "stat_fail_spike": {
+  "min_count": 8,
+  "z": 6
+ },
+ "stuffing_fast": {
+  "k": 10,
+  "ratio": 0.5,
+  "w": 1800
+ }
+}
